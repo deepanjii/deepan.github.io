@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='js/serverrequest.js'></script>
+<script src='js/employeetasks.js'></script>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<!-- assignee -->
+<select id="assigneeDropdown" class="dropdown">
+  <option>Deepan</option>
+  <option>Shriram</option>
+</select>
+
+<button onclick="getAssignedTasks()">Get My Tasks</button>
+
+<table id="myTable">
+  <tr>
+    <th>Task Name</th>
+    <th>Assigned By</th>
+    <th>Assigned To</th>
+    <th>Estimated Time</th>
+    <th>Priority</th>
+    <th>Status</th>
+  </tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,232 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.image-recognition 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-recognition-body
+{
+    position: relative;
+    width: 50%;
+    height: 720px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.header
+{
+    position: relative;
+    width: 100%;
+    height: 10%;
+/*    background-color: burlywood;*/
+    color: white;
+    margin: 0px;
+/*    display: inline-block;*/
+}
+
+.app-logo-div{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* center horizontally */
+	align-items: center;  /*center vertically*/ 
+    float: left;
+}
+
+.search-bar-div{
+    position: relative;
+    width: 50%;
+    height: 35%;
+    display: flex;
+    justify-content: center; /* center horizontally */
+	align-items: center;  /*center vertically*/ 
+    float: left;
+}
+
+.search-bar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.imageCanvas
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: floralwhite;
+    display: inline-block;
+    margin: 0;
+}
+
+.canvas-area
+{
+    position: relative
+    width: 100%;
+    height: 92.5%;
+/*    background-color: aqua;*/
+    padding: 0px;
+    justify-content: center; /* center horizontally */
+	align-items: center; /* center vertically */
+    display: flex;
+}
+
+#canvas-container{
+    position: relative;
+    width: 100%;
+    height: 95%;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* center horizontally */
+	align-items: center; /* center vertically */
+    display: flex;
+/*    background-color: aqua;*/
+}
+
+.mainCanvas
+{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+/*    background-color: yellow;*/
+}
+
+.cropSelection{
+    position: absolute;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ir-results
+{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+/*    background-color: lightcyan;*/
+    background-color: #f6f4ee;
+    display: inline-block;
+}
+
+.results-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: repeat(auto-fill, 260px);
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+/*    background-color: blueviolet;*/
+    padding: 15px;
+}
+
+.result
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.result-img-container
+{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.result-img{
+    width: 180px;
+    height: 180px;
+}
+
+.result-text{
+    width: 95%;
+    height: 25px;
+    margin-left: 10px;
+    overflow: hidden;
+    font-family: 'Montserrat', serif;
+    font-weight: 900;
+}
+
+.img-meta-data{
+    width: 200px;
+    height: 50px;
+/*    background-color: darkcyan;*/
+    color: black;
+}
+
+#recognize-button
+{
+    width: 100%;
+    height: 5%;
+}
+
+@keyframes code {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.placeholder-img{
+    width: 180px;
+    height: 180px;
+    background-color: #f6f4ee;
+    animation: code;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite; 
+}
+
+.placeholder-meta-data-parent{
+    width: 180;
+    height: 25px;
+    align-items: center;
+    float: left;
+    margin-left: 10px;
+    display: flex;
+}
+
+.placeholder-meta-data{
+    position: relative;
+    height: 35%;
+    background-color: #f6f4ee;
+    animation: code;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite; 
+}
